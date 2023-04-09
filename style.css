@@ -1,0 +1,16 @@
+:root {
+    /* Primary */
+    --clr-primary-cyan: hsl(172, 67%, 45%);  
+
+    /* Neutral */
+    --clr-neutral-darkcyan: hsl(183, 100%, 15%);
+    --clr-neutral-darkgraycyan: hsl(186, 14%, 43%);
+    --clr-neutral-graycyan: hsl(184, 14%, 56%);
+    --clr-neutral-lightgraycyan: hsl(185, 41%, 84%);
+    --clr-neutral-xlightgraycyan: hsl(189, 41%, 97%);
+    --clr-neutral-white: hsl(0, 0%, 100%);
+
+    --ff-primary: 'Space Mono', monospace;
+    --fs-base: 1.5rem;
+    --fw-bold: 700;
+}
