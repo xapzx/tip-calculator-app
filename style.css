@@ -215,6 +215,12 @@ main {
         color: var(--clr-neutral-darkcyan);
         cursor: pointer;
     }
+
+    .reset[data-disabled="true"]:hover {
+        background-color: var(--clr-primary-cyan);
+        color: var(--clr-neutral-darkcyan);
+        cursor:unset;
+    }
 }
 
 /* Utilities */
