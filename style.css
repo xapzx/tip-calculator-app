@@ -46,8 +46,8 @@ main {
     }
 
     main {
-        padding: 2rem 3rem;
-        width: 62.5%;
+        padding: 2rem 2rem 2rem 3rem;
+        width: 64%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 3rem;
@@ -76,8 +76,9 @@ main {
     text-align: right;
     border: none;
     border-radius: 4px;
-    padding: 0.4rem 1rem;
+    padding: 0.4rem 1rem 0.4rem 0.5rem;
     caret-color: var(--clr-primary-cyan);
+    width: 100%;
 }
 
 .inputs input:hover {
@@ -150,7 +151,68 @@ main {
     }
 
     .input-tip-item {
-        min-width: 6rem;
+        min-width: min(3rem, 6rem);
+    }
+}
+
+.outputs {
+    background-color: var(--clr-neutral-darkcyan);
+    color: var(--clr-neutral-white);
+    border-radius: 1rem;
+    margin-top: 2rem;
+    padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+    gap: 1.5rem;
+}
+
+.tip-amount-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.per-person {
+    color: var(--clr-neutral-graycyan);
+    font-size: 0.8rem;
+}
+
+.tip-amount-output {
+    color: var(--clr-primary-cyan);
+    font-size: 2rem;
+}
+
+.reset {
+    background-color: var(--clr-primary-cyan);
+    color: var(--clr-neutral-darkcyan);
+    font-size: 1.25rem;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 4px;
+    padding: 0.5rem 0;
+}
+
+@media (min-width: 900px) {
+    .outputs {
+        min-width: 26rem;
+        margin-top: 0;
+        padding: 2.5rem;
+    }
+
+    .tip-amount-output {
+        font-size: 3rem;
+    }
+
+    .reset {
+        margin-top: auto;
+    }
+
+    .reset[data-disabled="true"] {
+        opacity: 0.2;
+    }
+
+    .reset:hover {
+        background-color: var(--clr-neutral-lightgraycyan);
+        color: var(--clr-neutral-darkcyan);
+        cursor: pointer;
     }
 }
 
