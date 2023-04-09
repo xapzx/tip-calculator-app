@@ -14,25 +14,49 @@
   <script src="calculator.js" defer></script>
 </head>
 <body>
-
-  Bill
-
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
+  <header>
+    <h1 class="sr-only">Splitter - Tip Calculator App</h1>
+    <img src="images/logo.svg" alt="Brand Logo">
+  </header>
+  <main>
+    <div class="inputs">
+      <div class="input-bill-wrapper">
+        <label for="bill" class="input-bill-label">Bill</label>
+        <input type="text" name="bill" id="bill" placeholder="0">
+      </div>
+      <div class="input-tip-wrapper">
+        <label for="tip" class="input-tip">Select Tip %</label>
+        <div class="input-tip-item-wrapper">
+          <div class="input-tip-item">5%</div>
+          <div class="input-tip-item">10%</div>
+          <div class="input-tip-item">15%</div>
+          <div class="input-tip-item">25%</div>
+          <div class="input-tip-item">50%</div>
+          <input type="text" name="tip" id="tip" class="input-tip-item input-tip-item-custom" placeholder="Custom">
+        </div>
+      </div>
+      <div class="input-people-wrapper">
+        <label for="people" class="input-people-label">Number of People</label>
+        <input type="text" name="people" id="people" placeholder="0">
+      </div>
+    </div>
+    <div class="outputs">
+      <div class="tip-amount-wrapper">
+        <div class="tip-amount-title-wrapper">
+          <p class="tip-amount-title">Tip Amount</p>
+          <p class="per-person">/ person</p>
+        </div>
+        <div class="tip-amount-output tip-output">$0.00</div>
+      </div>
+      <div class="tip-amount-wrapper">
+        <div class="tip-amount-title-wrapper">
+          <p class="tip-amount-title">Total</p>
+          <p class="per-person">/ person</p>
+        </div>
+        <div class="tip-amount-output total-output">$0.00</div>
+      </div>
+      <a class="reset">Reset</a>
+    </div>
+  </main>
 </body>
 </html>
