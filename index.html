@@ -19,12 +19,13 @@
     <img src="images/logo.svg" alt="Brand Logo">
   </header>
   <main>
-    <div class="inputs">
-      <div class="input-bill-wrapper">
+    <div class="inputs flex-group">
+      <div class="input-bill-wrapper flex-group">
         <label for="bill" class="input-bill-label">Bill</label>
         <input type="text" name="bill" id="bill" placeholder="0">
+        <img src="images/icon-dollar.svg" alt="Dollar sign icon" class="input-img">
       </div>
-      <div class="input-tip-wrapper">
+      <div class="input-tip-wrapper flex-group">
         <label for="tip" class="input-tip">Select Tip %</label>
         <div class="input-tip-item-wrapper">
           <div class="input-tip-item">5%</div>
@@ -35,9 +36,11 @@
           <input type="text" name="tip" id="tip" class="input-tip-item input-tip-item-custom" placeholder="Custom">
         </div>
       </div>
-      <div class="input-people-wrapper">
+      <div class="input-people-wrapper flex-group">
         <label for="people" class="input-people-label">Number of People</label>
         <input type="text" name="people" id="people" placeholder="0">
+        <img src="images/icon-person.svg" alt="Person Icon" class="input-img">
+        <p class="people-error">Can't be zero</p>
       </div>
     </div>
     <div class="outputs">
