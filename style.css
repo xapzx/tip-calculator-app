@@ -142,7 +142,8 @@ main {
 
 @media (min-width: 900px) {
     .inputs {
-        gap: 2rem;
+        padding: 1rem 0;
+        gap: 2.5rem;
     }
 
     .input-tip-item-wrapper {
@@ -192,7 +193,7 @@ main {
 
 @media (min-width: 900px) {
     .outputs {
-        min-width: 26rem;
+        /* min-width: 26rem; */
         margin-top: 0;
         padding: 2.5rem;
     }
